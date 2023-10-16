@@ -1,0 +1,10 @@
+/* Profile page */
+.profile-page {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /* Profile page heading */
+  .profile-page h1 {
+    margin-top: 0;
+  }
