@@ -11,7 +11,7 @@ function App() {
 
   return (
     <UserContextProvider>
-      <h1>React video for Context API </h1>
+      <h1>React Context API </h1>
       <Profile />
       <Login />
     </UserContextProvider>

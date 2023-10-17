@@ -6,7 +6,7 @@ export default function Profile() {
     if(!user) return <h1>Not logged in</h1>
   return (
     <div className='profile-page'>
-        <h1>Welcome,  you signIn as {user.username}</h1>
+        <h1>Welcome {user.username} !!! </h1>
     </div>
   )
 }
