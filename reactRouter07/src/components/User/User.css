@@ -1,0 +1,83 @@
+#hackerrank1 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .header-nav button {
+    background-color: #008000;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .hero-section {
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .hero-section p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  .hero-section button {
+    margin: 10px 20px;
+  }
+  
+  .stats-section {
+    margin-top: 50px;
+  }
+  
+  .stats-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .stats-section ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .stats-section ul li {
+    width: 100px;
+  }
+  
+  .stats-section img {
+    width: 100%;
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .footer p {
+    font-size: 14px;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #333;
+  }

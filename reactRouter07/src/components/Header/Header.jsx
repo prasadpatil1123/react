@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import SearchBar from '../SearchBar/SearchBar';
 
 export default function Header() {
   return (
@@ -8,7 +9,8 @@ export default function Header() {
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link to="/" className="flex items-center">
             <img
-              src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
+              // src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
+              src="https://c0.klipartz.com/pngpicture/807/535/gratis-png-cuchillo-de-mesa-y-logotipo-de-tenedor-restaurante-imperio-iconos-de-computadora-comida-rapida-almuerzo-comida-tenedor-cuchillo-almuerzo-icono-de-restaurante.png"
               className="mr-3 h-12"
               alt="Logo"
             />
@@ -21,12 +23,23 @@ export default function Header() {
               Log in
             </Link>
             <Link
-              to="#"
-              className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+              to="/Register"
+              className="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
             >
               Get started
             </Link>
           </div>
+
+          <div className="flex flex-wrap justify-between items-center">
+            <Link
+              to="/SearchBar"
+              className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+            >
+              <SearchBar />
+            </Link>
+            
+          </div>
+
           <div
             className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
             id="mobile-menu-2"
@@ -65,6 +78,50 @@ export default function Header() {
               </li>
               <li>
                 <NavLink
+                  to="/Service"
+                  className={({ isActive }) =>
+                    `block pu-2 pr-4 pl-3 duration-200 border-b border-gray-100
+                   ${isActive ? "text-green-700" : "text-gray-700"} lg:hover:bg-transparent lg:border-0 hover:text:text-green-700 lg:p-0`
+                  }
+                >
+                  Service 
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/SearchBranch"
+                  className={({ isActive }) =>
+                    `block pu-2 pr-4 pl-3 duration-200 border-b border-gray-100
+                   ${isActive ? "text-green-700" : "text-gray-700"} lg:hover:bg-transparent lg:border-0 hover:text:text-green-700 lg:p-0`
+                  }
+                >
+                  Search Branch
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/Book_Cutlery"
+                  className={({ isActive }) =>
+                    `block pu-2 pr-4 pl-3 duration-200 border-b border-gray-100
+                   ${isActive ? "text-green-700" : "text-gray-700"} lg:hover:bg-transparent lg:border-0 hover:text:text-green-700 lg:p-0`
+                  }
+                >
+                  Book Cutlery
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/Contact"
+                  className={({ isActive }) =>
+                    `block pu-2 pr-4 pl-3 duration-200 border-b border-gray-100
+                   ${isActive ? "text-green-700" : "text-gray-700"} lg:hover:bg-transparent lg:border-0 hover:text:text-green-700 lg:p-0`
+                  }
+                >
+                  Contact
+                </NavLink>
+              </li>
+              {/* <li>
+                <NavLink
                   to="/Github"
                   className={({ isActive }) =>
                     `block pu-2 pr-4 pl-3 duration-200 border-b border-gray-100
@@ -73,7 +130,7 @@ export default function Header() {
                 >
                   Github
                 </NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink
                   to="/User"

@@ -9,7 +9,8 @@ export default function Footer() {
                   <div className="mb-6 md:mb-0">
                       <Link to="/" className="flex items-center">
                           <img
-                              src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
+                            //   src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
+                              src="https://c0.klipartz.com/pngpicture/807/535/gratis-png-cuchillo-de-mesa-y-logotipo-de-tenedor-restaurante-imperio-iconos-de-computadora-comida-rapida-almuerzo-comida-tenedor-cuchillo-almuerzo-icono-de-restaurante.png"
                               className="mr-3 h-16"
                               alt="Logo"
                           />
